@@ -45,7 +45,6 @@ const App = () => {
 
       {selectedCustomer && (
         <>
-          {/* 👇 Transactions table will come first */}
           <TransactionTable
             customerId={selectedCustomer}
             customerName={selectedCustomerName}
@@ -53,7 +52,6 @@ const App = () => {
             selectedYear={selectedYear}
           />
 
-          {/* 👇 Rewards Summary comes after transactions */}
           <CustomerRewards
             customerId={selectedCustomer}
             selectedMonth={selectedMonth}
